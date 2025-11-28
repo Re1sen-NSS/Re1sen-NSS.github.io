@@ -153,7 +153,7 @@
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">1</div>
+    <div class="sidebar-state-number">2</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
@@ -165,6 +165,9 @@
   </div>
 </div>
 <div class="sidebar-social">
+    <div class="icon-email sidebar-social-icon">
+      <a href=1683092187@qq.com itemprop="url" target="_blank" aria-label="email" rel="noopener nofollow noreferrer"></a>
+    </div>
 </div>
 <div class="sidebar-menu">
       <div class="sidebar-menu-link-wrap">
@@ -206,8 +209,42 @@
 
           <section id="main" aria-label="Main content">      <div class="post-wrapper">
   <div class="post-wrap left" data-aos="fade-up">
-      <a class="post-link" href="/2025/11/28/hello-world/" aria-label="Hello World" title="Hello World"></a>
+      <a class="post-link" href="/2025/11/28/%E6%9F%90%E8%B7%91%E6%AD%A5%E9%80%86%E5%90%91/" aria-label="" title=""></a>
     <div class="post-cover left">
+          <img data-src="/images/banner.webp" data-sizes="auto" alt="" class="lazyload">
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2025-11-28</span>
+        <span><span class="icon-pencil"></span>1.3k 字</span>
+        <span><span class="icon-clock"></span>7 分钟</span>
+      </div>
+      <h2 class="post-title"></h2>
+      <article class="post-article">
+          资源：22年某版本keep
+Keep_7.17.1.zip
+一、抓登录包，求签名算法aes_hook.js
+1、用frida脚本抓一下这个软件，然后登录：
+可以看到抓到了AES算法加密我们的账号与密码
+用burp抓一下看看：
+
+抓到的请求体就是刚刚aes hook到的数据
+把数据拿去解密也是成功获得我们的输入
+
+接着看sign，像是一串md5加密数据，在我们的frida hook的输出终端找一下看看：
+
+可以看到成功找到了一部分
+
+把update（update是java的md5加密算法的方法）后面的数据拿去md5也是成功还原
+但再次检查我们的发包内容，可以看到sign不止我们刚刚的md5数据，
+      </article>
+    </div>
+  </div>
+</div>
+      <div class="post-wrapper">
+  <div class="post-wrap right" data-aos="fade-up">
+      <a class="post-link" href="/2025/11/28/hello-world/" aria-label="Hello World" title="Hello World"></a>
+    <div class="post-cover right">
           <img data-src="/images/banner.webp" data-sizes="auto" alt="Hello World" class="lazyload">
     </div>
     <div class="post-info">
@@ -247,10 +284,10 @@ Run server1$ hexo ser
       </div>
       <div>
         <span class="icon-brush"></span>
-        75
+        1.4k
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        00:01
+        00:08
       </div>
       <div>
         <span class="icon-eye"></span>
@@ -278,7 +315,7 @@ Run server1$ hexo ser
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">1</div>
+    <div class="sidebar-state-number">2</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
@@ -290,6 +327,9 @@ Run server1$ hexo ser
   </div>
 </div>
 <div class="sidebar-social">
+    <div class="icon-email sidebar-social-icon">
+      <a href=1683092187@qq.com itemprop="url" target="_blank" aria-label="email" rel="noopener nofollow noreferrer"></a>
+    </div>
 </div>
 <div class="sidebar-menu">
       <div class="sidebar-menu-link-wrap">
